@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap card form carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="continer-fluid">
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <h1 style="text-align:center;background-color:orangered">Bootstrap-Carousel Card Form</h1>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner" style="height:90vh;">
+    <div class="carousel-item active">
+      <img src="images/download.png" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="images/image.png" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="images/image1.png" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  </div>
+<div class="container-fluid mt-3">
+  <div class="card  mx-auto" style="width:18rem ;">
+    <img class="card-img-top" src="images/elon.png" alt="Card image" style="width:100%">
+    <div class="card-body bg-info">
+      <h4 class="card-title">ELON MUSK</h4>
+      <p class="card-text"> He is the founder, CEO and chief engineer of SpaceX; angel investor, CEO and product architect of Tesla, Inc.</p>
+      <a href="#" class="btn btn-success">See Profile</a>
+    </div>
+  </div>
+<div class="container-fluid mt-5" style="background-color: rgb(0, 183, 255); height:90vh;">
+    <form action="/action_page.php">
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Address:</label>
+        <input type="password" class="form-control" id="add" placeholder="Apartment, studio" name="add">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">city:</label>
+        <input type="password" class="form-control" id="city" placeholder="" name="city">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">zip:</label>
+        <input type="password" class="form-control" id="zip" placeholder="" name="zip">
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
